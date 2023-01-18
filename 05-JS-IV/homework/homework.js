@@ -87,13 +87,23 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-}
+  var objeto = {
+    nombre: "Justo",
+    edad: 62
+  }
+  if (objeto["edad"]) {
+    return true;
+  } else {
+    return false;
+  }
+  }
 
 function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+  return usuario["password"] === password;
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
